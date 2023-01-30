@@ -9,22 +9,8 @@ namespace Ecommerce2_lavendetta
     public class Alimentare: Prodotto
     {
         string[] ingredienti = new string[10];
-        string date;
+        private DateTime scadenza;
 
-        public string Date
-        {
-            get
-            {
-                return date;
-            }
-            private set
-            {
-                if (value != "")
-                {
-                    date = value;
-                }
-            }
-        }
 
         public string[] Ingredienti
         {
@@ -45,7 +31,7 @@ namespace Ecommerce2_lavendetta
         {
             return scadenza < DateTime.Now;
         }
-      
+
         public Alimentare(string[] ingredienti, string date)
         {
           
