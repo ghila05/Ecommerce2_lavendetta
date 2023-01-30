@@ -35,7 +35,7 @@ namespace Ecommerce2_lavendetta
 
         }
 
-        public double getSconto(float price)
+        public float getSconto(float price)
         {
             if(DateTime.Today.DayOfWeek == DayOfWeek.Monday)
             {
@@ -45,6 +45,13 @@ namespace Ecommerce2_lavendetta
             {
                 return price;
             }
+        }
+
+        public override float getPrezzo()
+        {
+            float tot;
+           tot = getSconto(this.Prezzo);
+            return tot;
         }
 
     }

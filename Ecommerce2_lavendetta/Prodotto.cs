@@ -151,6 +151,11 @@ namespace Ecommerce2_lavendetta
             return scadenza < DateTime.Now;
         }
 
+        public virtual float getPrezzo()
+        {
+            return this.Prezzo;
+        }
+
 
     }
 }

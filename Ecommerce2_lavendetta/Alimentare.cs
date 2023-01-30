@@ -33,5 +33,20 @@ namespace Ecommerce2_lavendetta
         {
           
         }
+        /*
+        public float getSconto(float price, DateTime scadenza)
+        {
+           
+          data una data di scadenza verifica se oggi siamo 7 gg prima, in caso affermativo applica uno sconto del 50%
+          
+
+        }
+
+        public override float getPrezzo()
+        {
+          ritorna il prezzo scontato
+        }
+
+        */
     }
 }
