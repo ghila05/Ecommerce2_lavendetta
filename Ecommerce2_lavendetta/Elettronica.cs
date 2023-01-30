@@ -9,6 +9,7 @@ namespace Ecommerce2_lavendetta
     public class Elettronica: Prodotto
     {
         string _modello;
+        float sconto = 95/100;
 
         public string Modello
         {
@@ -38,7 +39,7 @@ namespace Ecommerce2_lavendetta
         {
             if(DateTime.Today.DayOfWeek == DayOfWeek.Monday)
             {
-                return price * 0.95;
+                return price * sconto;
             }
             else
             {

@@ -12,7 +12,7 @@ namespace Ecommerce2_lavendetta
        
         private string _id, _nome, _produttore, _descrizione;
         private float _prezzo;
-
+        private DateTime scadenza;
 
         public float Prezzo
         {
@@ -145,6 +145,12 @@ namespace Ecommerce2_lavendetta
         {
             return Id + ";" + Nome + ";" + Descrizione + ";" + Prezzo;
         }
+
+        public bool ControllaScadenza(DateTime scadenza)
+        {
+            return scadenza < DateTime.Now;
+        }
+
 
     }
 }
