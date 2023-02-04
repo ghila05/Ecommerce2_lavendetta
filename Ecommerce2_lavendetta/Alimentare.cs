@@ -9,7 +9,7 @@ namespace Ecommerce2_lavendetta
     public class Alimentare: Prodotto
     {
         string[] ingredienti = new string[10];
-
+        float sconto = 0,5;
 
 
         public string[] Ingredienti
@@ -29,24 +29,33 @@ namespace Ecommerce2_lavendetta
 
 
 
-        public Alimentare(string[] ingredienti, string date)
+        public Alimentare(string[] ingredienti, DateTime scadenza, float prezzo):base(prezzo) //devo rimettere tutti i campi del prodotto?
         {
           
         }
-        /*
+        
         public float getSconto(float price, DateTime scadenza)
         {
-           
-          data una data di scadenza verifica se oggi siamo 7 gg prima, in caso affermativo applica uno sconto del 50%
+           scadenza = scadenza.AddDays(-7);
+           int comp = DateTime.Compare(scadenza, DateTime.Now)
+           if (comp <= 0)
+            {
+                return this.Prezzo * sconto
+            }
+            else
+            {
+                return this.Prezzo;
+            }
+
           
 
         }
 
         public override float getPrezzo()
         {
-          ritorna il prezzo scontato
+          getSconto(Prezzo, scadenza);
         }
 
-        */
+        
     }
 }
