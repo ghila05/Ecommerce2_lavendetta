@@ -45,9 +45,9 @@ namespace Ecommerce2_lavendetta
 
                 listView1.Columns.Add("ID", 60);
                 listView1.Columns.Add("NOME", 80);
-                listView1.Columns.Add("PRODUTTORE", 80);
-                listView1.Columns.Add("DESCRIZIONE", 220);
-                listView1.Columns.Add("PREZZO", 50);
+                listView1.Columns.Add("PRODUTTORE", 100);
+                listView1.Columns.Add("DESCRIZIONE", 200);
+                listView1.Columns.Add("PREZZO", 100);
 
             }
 
@@ -137,8 +137,6 @@ namespace Ecommerce2_lavendetta
             c.Aggiungi(p);
 
 
-
-
             StampaElementi(listView1, c);
 
         }
@@ -171,9 +169,19 @@ namespace Ecommerce2_lavendetta
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if(listView1.SelectedItems.Count > 0)
+            {
+                listView1.Items.Remove(listView1.SelectedItems[0]);
+            }
+
 
         }
 
-
+        private void butnProddefault_Click(object sender, EventArgs e)
+        {
+            p = new Elettronica("123", "iphone", "apple", "iphone14 pro max", 1200, "hcpvlsm");
+            c.Aggiungi(p);
+            StampaElementi(listView1, c);
+        }
     }
 }
