@@ -34,7 +34,11 @@ namespace Ecommerce2_lavendetta
         {
           
         }
-        
+        public override string ToString()
+        {
+            return Id + ";" + Nome + ";" + Descrizione + ";" + Prezzo;
+        }
+
         public float getSconto(float price, DateTime scadenza)
         {
            scadenza = scadenza.AddDays(-7);

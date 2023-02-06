@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ecommerce2_lavendetta
 {
-    public class Cancelleria : Prodotto
+    public abstract class Cancelleria : Prodotto
     {
-        public Cancelleria()
+        public Cancelleria(string id, string nome, string prod, string descr, float prezzo):base(id, nome, prod, descr, prezzo)
         {
 
         }

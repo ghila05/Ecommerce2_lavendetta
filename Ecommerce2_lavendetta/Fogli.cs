@@ -25,10 +25,15 @@ namespace Ecommerce2_lavendetta
             }
         }
 
-        public Fogli(float grammatura)
+        public Fogli(float grammatura, string id, string nome, string prod, string descr, float prezzo): base(id, nome, prod, descr, prezzo)
         {
             Grammatura = grammatura;
 
-        }   
+        }
+
+        public override string ToString()
+        {
+            return Id + ";" + grammatura + ";" + Nome + ";" + Descrizione + ";" + Prezzo;
+        }
     }
 }

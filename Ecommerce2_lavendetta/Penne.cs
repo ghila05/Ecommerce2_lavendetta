@@ -25,10 +25,14 @@ namespace Ecommerce2_lavendetta
             }
         }
 
-        public Penne(string funzionamento)
+        public Penne(string funzionamento,string id, string nome, string prod, string descr, float prezzo): base(id, nome, prod, descr, prezzo)
         {
             Funzionamento = funzionamento;
 
+        }
+        public override string ToString()
+        {
+            return Id + ";" + funzionamento + ";" + Nome + ";" + Descrizione + ";" + Prezzo;
         }
     }
 }

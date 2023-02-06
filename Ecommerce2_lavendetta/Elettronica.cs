@@ -46,11 +46,15 @@ namespace Ecommerce2_lavendetta
                 return price;
             }
         }
+        public override string ToString()
+        {
+            return Id + ";"+ Nome + ";" +Produttore + ";" + Descrizione +";"+ Prezzo;
+        }
 
         public override float getPrezzo()
         {
             float tot;
-           tot = getSconto(this.Prezzo);
+            tot = getSconto(this.Prezzo);
             return tot;
         }
 
