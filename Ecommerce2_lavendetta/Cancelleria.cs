@@ -13,14 +13,15 @@ namespace Ecommerce2_lavendetta
 
         }
 
-        float sconto = 0,97;
+        float sconto = 97/100;
 
         public override float getPrezzo()
         {
             if(DateTime.Now.Day % 2 == 0)
             {
-                return this.Prezzo * sconto
+                return this.Prezzo * sconto;
             }
+            return -1;
         }
     }
 }
