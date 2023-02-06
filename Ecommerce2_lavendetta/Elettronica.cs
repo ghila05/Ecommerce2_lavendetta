@@ -26,7 +26,7 @@ namespace Ecommerce2_lavendetta
             }
         }
 
-        public Elettronica(string id, string nome, string prod, string descr, float prezzo, string modello): base (id,nome,prod,descr)
+        public Elettronica(string id, string nome, string prod, string descr, float prezzo, string modello): base(id,nome,prod,descr,prezzo)
         {
             Modello = modello;
         }
@@ -48,7 +48,7 @@ namespace Ecommerce2_lavendetta
         }
         public override string ToString()
         {
-            return Id + ";"+ Nome + ";" +Produttore + ";" + Descrizione +";"+ Prezzo;
+            return base.ToString() + ";" + Modello;
         }
 
         public override float getPrezzo()

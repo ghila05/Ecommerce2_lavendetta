@@ -36,7 +36,12 @@ namespace Ecommerce2_lavendetta
         }
         public override string ToString()
         {
-            return Id + ";" + Nome + ";" + Descrizione + ";" + Prezzo;
+            string uwu = "";
+            for (int i = 0; i < Ingredienti.Length; i++)
+            {
+                uwu += $"{ingredienti[i]}, ";
+            }
+            return base.ToString() + ";" + uwu + ";" + $"{scadenza}";
         }
 
         public float getSconto(float price, DateTime scadenza)

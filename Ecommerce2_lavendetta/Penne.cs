@@ -32,7 +32,7 @@ namespace Ecommerce2_lavendetta
         }
         public override string ToString()
         {
-            return Id + ";" + funzionamento + ";" + Nome + ";" + Descrizione + ";" + Prezzo;
+            return base.ToString() + ";" + Funzionamento;
         }
     }
 }

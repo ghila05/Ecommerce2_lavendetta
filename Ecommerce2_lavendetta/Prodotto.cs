@@ -100,22 +100,9 @@ namespace Ecommerce2_lavendetta
             Prezzo = prezzo;
         }
 
-        public Prodotto(string id, string nome, string prod, string descr) : this(id, nome, prod, descr, 10)
-        {
-        }
 
-        public Prodotto(string id, string nome, string prod) : this(id, nome, prod, "N/A", 10)
-        {
-        }
+ 
 
-        public Prodotto() : this("IDVUOTO", "N/A", "N/A", "N/A", 10)
-        {
-        }
-
-        public Prodotto(string id, string nome, string prod, float prezzo) : this(id, nome, prod, "N/A", prezzo)
-        {
-
-        }
 
         //COSTRUTTORE DI COPIA (PROTETTO) PER CLONE
         protected Prodotto(Prodotto other) : this(other.Id, other.Nome, other.Produttore, other.Descrizione, other.Prezzo)
@@ -143,7 +130,7 @@ namespace Ecommerce2_lavendetta
         //ToString
         public override string ToString()
         {
-            return Id + ";" + Nome + ";" + Descrizione + ";" + Prezzo;
+            return Id + ";" + Nome + ";" + Produttore +";"+Descrizione + ";" + Prezzo;
         }
 
         public bool ControllaScadenza(DateTime scadenza)
