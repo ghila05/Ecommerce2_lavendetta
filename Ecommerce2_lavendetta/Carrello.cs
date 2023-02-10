@@ -14,7 +14,7 @@ namespace Ecommerce2_lavendetta
         private string _id;
         private int currentLenght;
         private Prodotto[] _prod = new Prodotto[MAXCARR];
-
+        private Prodotto p = new Prodotto();
 
         public string Id
         {
@@ -130,6 +130,19 @@ namespace Ecommerce2_lavendetta
                 throw new Exception("Inserire un prodotto valido");
         }
 
+        public void Eliminadaid(string id)
+        {
+            for (int i=0; i<currentLenght; i++)
+            {
+                if(_prod[i].Id == id)
+                {
+                    Rimuovi(_prod[i]);
+
+                }
+            }
+   
+
+        }
 
 
 

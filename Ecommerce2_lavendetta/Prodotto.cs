@@ -100,7 +100,10 @@ namespace Ecommerce2_lavendetta
             Prezzo = prezzo;
         }
 
+        public Prodotto()
+        {
 
+        }
  
 
 

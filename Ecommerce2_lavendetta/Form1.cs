@@ -169,12 +169,20 @@ namespace Ecommerce2_lavendetta
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(listView1.SelectedItems.Count > 0)
+            string id;
+            id = listView1.SelectedItems[0].SubItems[0].Text;
+            MessageBox.Show(id);
+            c.Eliminadaid(id);
+            if (listView1.SelectedItems.Count > 0)
             {
                 listView1.Items.Remove(listView1.SelectedItems[0]);
             }
 
-
+        }
+        public Prodotto CreaProdTemp(string id, string nome, string prod, string descr, float prezz)
+        {
+            Prodotto p = new Prodotto(id, nome, prod, descr, prezz);
+            return p;
         }
 
         private void butnProddefault_Click(object sender, EventArgs e)

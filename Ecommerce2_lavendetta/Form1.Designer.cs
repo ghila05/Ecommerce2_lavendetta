@@ -55,12 +55,13 @@
             this.Txtgrammatura = new System.Windows.Forms.TextBox();
             this.TxtFunzionamento = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // butnSvuota
             // 
             this.butnSvuota.Location = new System.Drawing.Point(793, 567);
-            this.butnSvuota.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butnSvuota.Margin = new System.Windows.Forms.Padding(4);
             this.butnSvuota.Name = "butnSvuota";
             this.butnSvuota.Size = new System.Drawing.Size(271, 66);
             this.butnSvuota.TabIndex = 29;
@@ -70,7 +71,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(1071, 567);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(271, 66);
             this.button3.TabIndex = 28;
@@ -84,7 +85,7 @@
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(629, 15);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(713, 505);
             this.listView1.TabIndex = 27;
@@ -93,7 +94,7 @@
             // butnProddefault
             // 
             this.butnProddefault.Location = new System.Drawing.Point(9, 567);
-            this.butnProddefault.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butnProddefault.Margin = new System.Windows.Forms.Padding(4);
             this.butnProddefault.Name = "butnProddefault";
             this.butnProddefault.Size = new System.Drawing.Size(271, 66);
             this.butnProddefault.TabIndex = 26;
@@ -104,7 +105,7 @@
             // butnInserisci
             // 
             this.butnInserisci.Location = new System.Drawing.Point(9, 477);
-            this.butnInserisci.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butnInserisci.Margin = new System.Windows.Forms.Padding(4);
             this.butnInserisci.Name = "butnInserisci";
             this.butnInserisci.Size = new System.Drawing.Size(184, 66);
             this.butnInserisci.TabIndex = 25;
@@ -165,7 +166,7 @@
             // TxtPrezzo
             // 
             this.TxtPrezzo.Location = new System.Drawing.Point(16, 300);
-            this.TxtPrezzo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtPrezzo.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPrezzo.Name = "TxtPrezzo";
             this.TxtPrezzo.Size = new System.Drawing.Size(105, 22);
             this.TxtPrezzo.TabIndex = 19;
@@ -173,7 +174,7 @@
             // TxtDescri
             // 
             this.TxtDescri.Location = new System.Drawing.Point(180, 192);
-            this.TxtDescri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtDescri.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDescri.Name = "TxtDescri";
             this.TxtDescri.Size = new System.Drawing.Size(105, 22);
             this.TxtDescri.TabIndex = 18;
@@ -181,7 +182,7 @@
             // TxtProduttore
             // 
             this.TxtProduttore.Location = new System.Drawing.Point(16, 192);
-            this.TxtProduttore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtProduttore.Margin = new System.Windows.Forms.Padding(4);
             this.TxtProduttore.Name = "TxtProduttore";
             this.TxtProduttore.Size = new System.Drawing.Size(105, 22);
             this.TxtProduttore.TabIndex = 17;
@@ -189,7 +190,7 @@
             // TxtNome
             // 
             this.TxtNome.Location = new System.Drawing.Point(180, 90);
-            this.TxtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtNome.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNome.Name = "TxtNome";
             this.TxtNome.Size = new System.Drawing.Size(105, 22);
             this.TxtNome.TabIndex = 16;
@@ -197,7 +198,7 @@
             // TxtID
             // 
             this.TxtID.Location = new System.Drawing.Point(20, 90);
-            this.TxtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtID.Margin = new System.Windows.Forms.Padding(4);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(105, 22);
             this.TxtID.TabIndex = 15;
@@ -205,7 +206,7 @@
             // dateTime
             // 
             this.dateTime.Location = new System.Drawing.Point(179, 300);
-            this.dateTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTime.Margin = new System.Windows.Forms.Padding(4);
             this.dateTime.Name = "dateTime";
             this.dateTime.Size = new System.Drawing.Size(255, 22);
             this.dateTime.TabIndex = 30;
@@ -229,7 +230,7 @@
             "PENNE",
             "ELETTRONICA"});
             this.comboBox.Location = new System.Drawing.Point(333, 90);
-            this.comboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox.Name = "comboBox";
             this.comboBox.Size = new System.Drawing.Size(160, 24);
             this.comboBox.TabIndex = 32;
@@ -247,7 +248,7 @@
             // txtIngredienti
             // 
             this.txtIngredienti.Location = new System.Drawing.Point(333, 192);
-            this.txtIngredienti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIngredienti.Margin = new System.Windows.Forms.Padding(4);
             this.txtIngredienti.Multiline = true;
             this.txtIngredienti.Name = "txtIngredienti";
             this.txtIngredienti.Size = new System.Drawing.Size(215, 54);
@@ -276,7 +277,7 @@
             // TxtModello
             // 
             this.TxtModello.Location = new System.Drawing.Point(20, 398);
-            this.TxtModello.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtModello.Margin = new System.Windows.Forms.Padding(4);
             this.TxtModello.Name = "TxtModello";
             this.TxtModello.Size = new System.Drawing.Size(105, 22);
             this.TxtModello.TabIndex = 36;
@@ -295,7 +296,7 @@
             // Txtgrammatura
             // 
             this.Txtgrammatura.Location = new System.Drawing.Point(176, 398);
-            this.Txtgrammatura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txtgrammatura.Margin = new System.Windows.Forms.Padding(4);
             this.Txtgrammatura.Name = "Txtgrammatura";
             this.Txtgrammatura.Size = new System.Drawing.Size(105, 22);
             this.Txtgrammatura.TabIndex = 38;
@@ -303,7 +304,7 @@
             // TxtFunzionamento
             // 
             this.TxtFunzionamento.Location = new System.Drawing.Point(352, 398);
-            this.TxtFunzionamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtFunzionamento.Margin = new System.Windows.Forms.Padding(4);
             this.TxtFunzionamento.Name = "TxtFunzionamento";
             this.TxtFunzionamento.Size = new System.Drawing.Size(99, 22);
             this.TxtFunzionamento.TabIndex = 40;
@@ -319,11 +320,21 @@
             this.label11.TabIndex = 41;
             this.label11.Text = "FUNZIONAMENTO:";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1227, 600);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 17);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "label12";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1363, 654);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.TxtFunzionamento);
             this.Controls.Add(this.label10);
@@ -351,7 +362,7 @@
             this.Controls.Add(this.TxtProduttore);
             this.Controls.Add(this.TxtNome);
             this.Controls.Add(this.TxtID);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -389,6 +400,7 @@
         private System.Windows.Forms.TextBox Txtgrammatura;
         private System.Windows.Forms.TextBox TxtFunzionamento;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
 
