@@ -26,7 +26,7 @@ namespace Ecommerce2_lavendetta
         string grammatura;
         string funzionamento;
         bool first = true;
-
+        public float scontato;
 
 
 
@@ -108,7 +108,6 @@ namespace Ecommerce2_lavendetta
             if (comboBox.Text == "ALIMENTARE")
             {
                 data = dateTime.Value; 
-                
             }
 
             Controlla();
@@ -136,10 +135,9 @@ namespace Ecommerce2_lavendetta
 
 
             c.Aggiungi(p);
-            float b = p.getPrezzo();
-            string prezzos = Convert.ToString(b);
-
-            label_PREZZO.Text = "PREZZO SCONTATO: "+prezzos;
+            MessageBox.Show(Convert.ToString(p.getPrezzo()));
+            scontato += p.getPrezzo();
+            label_PREZZO.Text = "PREZZO SCONTATO: "+ Convert.ToString(scontato);
 
             StampaElementi(listView1, c);
 

@@ -10,7 +10,7 @@ namespace Ecommerce2_lavendetta
     {
         string[] ingredienti = new string[10];
         float sconto = 5/100;
-        DateTime scadenza;
+        DateTime Scadenza;
 
 
         public string[] Ingredienti
@@ -32,7 +32,8 @@ namespace Ecommerce2_lavendetta
 
         public Alimentare(string[] ingredienti, DateTime scadenza,string id, string nome,string prod,string descr,float prezzo) :base (id,nome,prod,descr,prezzo) 
         {
-          
+            Ingredienti = ingredienti;
+            Scadenza = scadenza;
         }
         public override string ToString()
         {
@@ -41,7 +42,7 @@ namespace Ecommerce2_lavendetta
             {
                 uwu += $"{ingredienti[i]}, ";
             }
-            return base.ToString() + ";" + uwu + ";" + $"{scadenza}";
+            return base.ToString() + ";" + uwu + ";" + $"{Scadenza}";
         }
 
         public float getSconto(float price, DateTime scadenza)
@@ -66,7 +67,7 @@ namespace Ecommerce2_lavendetta
 
         public override float getPrezzo()
         {
-           return getSconto(Prezzo, scadenza);
+           return getSconto(Prezzo, Scadenza);
         }
 
         
