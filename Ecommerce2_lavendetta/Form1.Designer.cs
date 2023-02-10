@@ -56,6 +56,7 @@
             this.TxtFunzionamento = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label_PREZZO = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // butnSvuota
@@ -329,11 +330,21 @@
             this.label12.TabIndex = 42;
             this.label12.Text = "label12";
             // 
+            // label_PREZZO
+            // 
+            this.label_PREZZO.AutoSize = true;
+            this.label_PREZZO.Location = new System.Drawing.Point(235, 499);
+            this.label_PREZZO.Name = "label_PREZZO";
+            this.label_PREZZO.Size = new System.Drawing.Size(81, 17);
+            this.label_PREZZO.TabIndex = 43;
+            this.label_PREZZO.Text = "PREZZO: 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1363, 654);
+            this.Controls.Add(this.label_PREZZO);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.TxtFunzionamento);
@@ -401,6 +412,7 @@
         private System.Windows.Forms.TextBox TxtFunzionamento;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label_PREZZO;
     }
 }
 
