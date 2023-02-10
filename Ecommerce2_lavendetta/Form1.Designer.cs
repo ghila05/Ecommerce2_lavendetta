@@ -335,9 +335,9 @@
             this.label_PREZZO.AutoSize = true;
             this.label_PREZZO.Location = new System.Drawing.Point(235, 499);
             this.label_PREZZO.Name = "label_PREZZO";
-            this.label_PREZZO.Size = new System.Drawing.Size(81, 17);
+            this.label_PREZZO.Size = new System.Drawing.Size(162, 17);
             this.label_PREZZO.TabIndex = 43;
-            this.label_PREZZO.Text = "PREZZO: 0";
+            this.label_PREZZO.Text = "PREZZO SCONTATO: 0";
             // 
             // Form1
             // 

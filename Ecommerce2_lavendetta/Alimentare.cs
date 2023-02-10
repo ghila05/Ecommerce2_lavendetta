@@ -47,9 +47,8 @@ namespace Ecommerce2_lavendetta
         public float getSconto(float price, DateTime scadenza)
         {
             DateTime s = DateTime.Now;
-            s.AddDays(7);
-
-
+            s = s.AddDays(7);
+            
             int comp = DateTime.Compare(scadenza, s);
 
             if (comp <= 0)
