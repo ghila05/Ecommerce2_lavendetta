@@ -17,11 +17,12 @@ namespace Ecommerce2_lavendetta
 
         public override float getPrezzo()
         {
-            if(DateTime.Now.Day % 2 == 0)
+            if (DateTime.Now.Day % 2 == 0)
             {
                 return this.Prezzo * sconto;
             }
-            return -1;
+            else
+                return this.Prezzo;
         }
     }
 }

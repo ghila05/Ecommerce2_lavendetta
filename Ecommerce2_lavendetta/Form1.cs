@@ -28,8 +28,6 @@ namespace Ecommerce2_lavendetta
         bool first = true;
         public float scontato;
 
-
-
         public Form1()
         {
             InitializeComponent();
@@ -94,6 +92,7 @@ namespace Ecommerce2_lavendetta
 
         private void butnInserisci_Click(object sender, EventArgs e)
         {
+            //input 
             id = TxtID.Text;
             nome = TxtNome.Text;
             produttore = TxtProduttore.Text;
@@ -133,32 +132,26 @@ namespace Ecommerce2_lavendetta
                 p = new Penne(funzionamento,id,nome,produttore,descrizione,float.Parse(prezzo));
             }
 
+            // aggiunta
 
             c.Aggiungi(p);
-            MessageBox.Show(Convert.ToString(p.getPrezzo()));
+            ListViewItem item = new ListViewItem(p.Id);
+            item.SubItems.Add(p.Nome);
+            item.SubItems.Add(p.Produttore);
+            item.SubItems.Add(p.Descrizione);
+            item.SubItems.Add(Convert.ToString(p.Prezzo));
+            listView1.Items.Add(item);
+
+
+            // calcolo e stampa del prezzo scontato
             scontato += p.getPrezzo();
             label_PREZZO.Text = "PREZZO SCONTATO: "+ Convert.ToString(scontato);
 
-            StampaElementi(listView1, c);
 
+            
         }
 
 
-        public static void StampaElementi(ListView listino, Carrello carr)
-        {
-            listino.Items.Clear();
-            Prodotto[] prod = carr.Prodotti;
- 
-
-            for (int i = 0; i < prod.Length; i++)
-            {
-
-                string[] temp = new string[] { prod[i].Id, prod[i].Nome, prod[i].Produttore, prod[i].Descrizione, $"{prod[i].Prezzo}" };
-                ListViewItem item = new ListViewItem(temp);
-                listino.Items.Add(item);
-                i++;
-            }
-        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -175,6 +168,7 @@ namespace Ecommerce2_lavendetta
             id = listView1.SelectedItems[0].SubItems[0].Text;
             MessageBox.Show(id);
             c.Eliminadaid(id);
+            scontato = scontato - p.getPrezzo();
             if (listView1.SelectedItems.Count > 0)
             {
                 listView1.Items.Remove(listView1.SelectedItems[0]);
@@ -189,9 +183,15 @@ namespace Ecommerce2_lavendetta
 
         private void butnProddefault_Click(object sender, EventArgs e)
         {
-            p = new Elettronica("123", "iphone", "apple", "iphone14 pro max", 1200, "hcpvlsm");
-            c.Aggiungi(p);
-            StampaElementi(listView1, c);
+;          
+        }
+
+        private void butnSvuota_Click(object sender, EventArgs e)
+        {
+            c.Svuota();
+            scontato = 0;
+            label_PREZZO.Text = "PREZZO SCONTATO: " + Convert.ToString(scontato);
+            listView1.Items.Clear();
         }
     }
 }

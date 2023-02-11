@@ -31,7 +31,6 @@
             this.butnSvuota = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.butnProddefault = new System.Windows.Forms.Button();
             this.butnInserisci = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,23 +54,23 @@
             this.Txtgrammatura = new System.Windows.Forms.TextBox();
             this.TxtFunzionamento = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label_PREZZO = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // butnSvuota
             // 
-            this.butnSvuota.Location = new System.Drawing.Point(793, 567);
+            this.butnSvuota.Location = new System.Drawing.Point(220, 582);
             this.butnSvuota.Margin = new System.Windows.Forms.Padding(4);
             this.butnSvuota.Name = "butnSvuota";
             this.butnSvuota.Size = new System.Drawing.Size(271, 66);
             this.butnSvuota.TabIndex = 29;
             this.butnSvuota.Text = "SVUOTA";
             this.butnSvuota.UseVisualStyleBackColor = true;
+            this.butnSvuota.Click += new System.EventHandler(this.butnSvuota_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1071, 567);
+            this.button3.Location = new System.Drawing.Point(498, 582);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(271, 66);
@@ -85,27 +84,17 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(629, 15);
+            this.listView1.Location = new System.Drawing.Point(606, 13);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(713, 505);
             this.listView1.TabIndex = 27;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // butnProddefault
-            // 
-            this.butnProddefault.Location = new System.Drawing.Point(9, 567);
-            this.butnProddefault.Margin = new System.Windows.Forms.Padding(4);
-            this.butnProddefault.Name = "butnProddefault";
-            this.butnProddefault.Size = new System.Drawing.Size(271, 66);
-            this.butnProddefault.TabIndex = 26;
-            this.butnProddefault.Text = "INSERIMENTO RAPIDO [PRODOTTO ESEMPIO]";
-            this.butnProddefault.UseVisualStyleBackColor = true;
-            this.butnProddefault.Click += new System.EventHandler(this.butnProddefault_Click);
-            // 
             // butnInserisci
             // 
-            this.butnInserisci.Location = new System.Drawing.Point(9, 477);
+            this.butnInserisci.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butnInserisci.Location = new System.Drawing.Point(6, 582);
             this.butnInserisci.Margin = new System.Windows.Forms.Padding(4);
             this.butnInserisci.Name = "butnInserisci";
             this.butnInserisci.Size = new System.Drawing.Size(184, 66);
@@ -321,21 +310,13 @@
             this.label11.TabIndex = 41;
             this.label11.Text = "FUNZIONAMENTO:";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1227, 600);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 17);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "label12";
-            // 
             // label_PREZZO
             // 
             this.label_PREZZO.AutoSize = true;
-            this.label_PREZZO.Location = new System.Drawing.Point(235, 499);
+            this.label_PREZZO.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_PREZZO.Location = new System.Drawing.Point(1033, 547);
             this.label_PREZZO.Name = "label_PREZZO";
-            this.label_PREZZO.Size = new System.Drawing.Size(162, 17);
+            this.label_PREZZO.Size = new System.Drawing.Size(276, 29);
             this.label_PREZZO.TabIndex = 43;
             this.label_PREZZO.Text = "PREZZO SCONTATO: 0";
             // 
@@ -345,7 +326,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1363, 654);
             this.Controls.Add(this.label_PREZZO);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.TxtFunzionamento);
             this.Controls.Add(this.label10);
@@ -361,7 +341,6 @@
             this.Controls.Add(this.butnSvuota);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.butnProddefault);
             this.Controls.Add(this.butnInserisci);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -387,7 +366,6 @@
         private System.Windows.Forms.Button butnSvuota;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button butnProddefault;
         private System.Windows.Forms.Button butnInserisci;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -411,7 +389,6 @@
         private System.Windows.Forms.TextBox Txtgrammatura;
         private System.Windows.Forms.TextBox TxtFunzionamento;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label_PREZZO;
     }
 }
